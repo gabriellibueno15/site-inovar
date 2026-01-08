@@ -14,9 +14,9 @@
         }
 
         .container {
-            max-width: 800px;
+            max-width: 700px;
             margin: 0 auto;
-            padding: 60px 20px;
+            padding: 80px 20px;
             text-align: center;
         }
 
@@ -26,7 +26,7 @@
         }
 
         h1 {
-            font-size: 2.3rem;
+            font-size: 2.2rem;
             margin-bottom: 10px;
             color: #1f2933;
         }
@@ -34,47 +34,37 @@
         .subtitle {
             font-size: 1.1rem;
             color: #555;
-            margin-bottom: 40px;
-        }
-
-        .box {
-            padding: 40px 30px;
-            border: 1px solid #e5e7eb;
-            border-radius: 12px;
-        }
-
-        .box h2 {
-            font-size: 1.6rem;
-            margin-bottom: 15px;
-            color: #1f2933;
-        }
-
-        .box p {
-            font-size: 1rem;
-            line-height: 1.7;
-            color: #444;
+            margin-bottom: 50px;
         }
 
         .buttons {
-            margin-top: 30px;
             display: flex;
             justify-content: center;
-            gap: 15px;
+            gap: 20px;
             flex-wrap: wrap;
         }
 
         .buttons a {
+            display: flex;
+            align-items: center;
+            gap: 10px;
             text-decoration: none;
-            padding: 14px 24px;
-            border-radius: 6px;
+            padding: 14px 22px;
+            border-radius: 8px;
             font-weight: 600;
             font-size: 0.95rem;
             transition: 0.3s;
+            border: 1px solid;
+        }
+
+        .buttons img {
+            width: 22px;
+            height: 22px;
         }
 
         .instagram {
-            border: 1px solid #E1306C;
             color: #E1306C;
+            border-color: #E1306C;
         }
 
         .instagram:hover {
@@ -82,9 +72,13 @@
             color: #ffffff;
         }
 
+        .instagram:hover img {
+            filter: brightness(0) invert(1);
+        }
+
         .whatsapp {
-            border: 1px solid #25D366;
             color: #25D366;
+            border-color: #25D366;
         }
 
         .whatsapp:hover {
@@ -92,8 +86,12 @@
             color: #ffffff;
         }
 
+        .whatsapp:hover img {
+            filter: brightness(0) invert(1);
+        }
+
         footer {
-            margin-top: 60px;
+            margin-top: 70px;
             font-size: 0.85rem;
             color: #777;
         }
@@ -113,32 +111,24 @@
             Contabilidade moderna, simples e segura para sua empresa
         </p>
 
-        <div class="box">
-            <h2>Quem Somos</h2>
-            <p>
-                A <strong>Contabilidade Inovar</strong> atua com foco em inovação,
-                transparência e excelência nos serviços contábeis.
-                Oferecemos soluções completas para empresas e profissionais,
-                ajudando você a crescer com segurança e organização.
-            </p>
+        <div class="buttons">
+            <a 
+                class="instagram" 
+                href="https://www.instagram.com/contabilidade_inovar/" 
+                target="_blank"
+            >
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg" alt="Instagram">
+                Instagram
+            </a>
 
-            <div class="buttons">
-                <a 
-                    class="instagram" 
-                    href="https://www.instagram.com/contabilidade_inovar/" 
-                    target="_blank"
-                >
-                    Instagram
-                </a>
-
-                <a 
-                    class="whatsapp" 
-                    href="https://wa.me/+5561998022815" 
-                    target="_blank"
-                >
-                    WhatsApp
-                </a>
-            </div>
+            <a 
+                class="whatsapp" 
+                href="https://wa.me/+5561998022815" 
+                target="_blank"
+            >
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/500px-WhatsApp.svg.png" alt="WhatsApp">
+                WhatsApp
+            </a>
         </div>
 
         <footer>
