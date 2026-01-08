@@ -8,123 +8,143 @@
     <style>
         body {
             margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
-            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-            color: #ffffff;
+            font-family: "Segoe UI", Arial, sans-serif;
+            background-color: #ffffff;
+            color: #333333;
         }
 
-        header {
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 60px 20px;
             text-align: center;
-            padding: 40px 20px;
         }
 
-        header img {
+        .logo {
             max-width: 220px;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
         }
 
-        header h1 {
-            margin: 0;
-            font-size: 2.5rem;
+        h1 {
+            font-size: 2.3rem;
+            margin-bottom: 10px;
+            color: #1f2933;
         }
 
-        header p {
+        .subtitle {
             font-size: 1.1rem;
-            opacity: 0.9;
+            color: #555;
+            margin-bottom: 40px;
         }
 
-        section {
-            max-width: 900px;
-            margin: 40px auto;
-            padding: 30px;
-            background: rgba(255, 255, 255, 0.08);
+        .box {
+            padding: 40px 30px;
+            border: 1px solid #e5e7eb;
             border-radius: 12px;
         }
 
-        section h2 {
-            text-align: center;
-            margin-bottom: 20px;
-            color: #f0f0f0;
+        .box h2 {
+            font-size: 1.6rem;
+            margin-bottom: 15px;
+            color: #1f2933;
         }
 
-        section p {
-            text-align: center;
-            line-height: 1.6;
+        .box p {
             font-size: 1rem;
+            line-height: 1.7;
+            color: #444;
         }
 
         .buttons {
+            margin-top: 30px;
             display: flex;
             justify-content: center;
-            gap: 20px;
-            margin-top: 30px;
+            gap: 15px;
             flex-wrap: wrap;
         }
 
         .buttons a {
             text-decoration: none;
-            padding: 15px 25px;
-            border-radius: 8px;
-            font-weight: bold;
-            color: #ffffff;
+            padding: 14px 24px;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 0.95rem;
             transition: 0.3s;
         }
 
         .instagram {
-            background: #E1306C;
+            border: 1px solid #E1306C;
+            color: #E1306C;
         }
 
         .instagram:hover {
-            background: #c8235a;
+            background-color: #E1306C;
+            color: #ffffff;
         }
 
         .whatsapp {
-            background: #25D366;
+            border: 1px solid #25D366;
+            color: #25D366;
         }
 
         .whatsapp:hover {
-            background: #1ebe5d;
+            background-color: #25D366;
+            color: #ffffff;
         }
 
         footer {
-            text-align: center;
-            padding: 20px;
-            font-size: 0.9rem;
-            opacity: 0.8;
+            margin-top: 60px;
+            font-size: 0.85rem;
+            color: #777;
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <img src="https://raw.githubusercontent.com/gabriellibueno15/site-inovar/main/Logo%20nova%201%20fundo%20escuro.jpeg.png" alt="Contabilidade Inovar">
-        <h1>Contabilidade Inovar</h1>
-        <p>Soluções contábeis modernas para sua empresa crescer com segurança</p>
-    </header>
+    <div class="container">
+        <img 
+            class="logo" 
+            src="https://raw.githubusercontent.com/gabriellibueno15/site-inovar/main/Logo%20nova%201%20fundo%20escuro.jpeg.png" 
+            alt="Contabilidade Inovar"
+        >
 
-    <section>
-        <h2>Quem Somos</h2>
-        <p>
-            A <strong>Contabilidade Inovar</strong> oferece serviços contábeis completos,
-            com foco em inovação, transparência e confiança.
-            Atendemos empresas e profissionais com excelência, ajudando você a
-            tomar decisões seguras e estratégicas.
+        <h1>Contabilidade Inovar</h1>
+        <p class="subtitle">
+            Contabilidade moderna, simples e segura para sua empresa
         </p>
 
-        <div class="buttons">
-            <a class="instagram" href="https://www.instagram.com/contabilidade_inovar/" target="_blank">
-                📷 Instagram
-            </a>
+        <div class="box">
+            <h2>Quem Somos</h2>
+            <p>
+                A <strong>Contabilidade Inovar</strong> atua com foco em inovação,
+                transparência e excelência nos serviços contábeis.
+                Oferecemos soluções completas para empresas e profissionais,
+                ajudando você a crescer com segurança e organização.
+            </p>
 
-            <a class="whatsapp" href="https://wa.me/+5561998022815" target="_blank">
-                💬 WhatsApp
-            </a>
+            <div class="buttons">
+                <a 
+                    class="instagram" 
+                    href="https://www.instagram.com/contabilidade_inovar/" 
+                    target="_blank"
+                >
+                    Instagram
+                </a>
+
+                <a 
+                    class="whatsapp" 
+                    href="https://wa.me/+5561998022815" 
+                    target="_blank"
+                >
+                    WhatsApp
+                </a>
+            </div>
         </div>
-    </section>
 
-    <footer>
-        © 2026 Contabilidade Inovar • Todos os direitos reservados
-    </footer>
+        <footer>
+            © 2026 Contabilidade Inovar • Todos os direitos reservados
+        </footer>
+    </div>
 
 </body>
 </html>
